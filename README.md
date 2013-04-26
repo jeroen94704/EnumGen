@@ -44,6 +44,12 @@ Take a look at example.py to see how enums are specified. In short, to specify a
 
 is the specification for an enum named Color, with values Color::RED and Color::Green. Calling Color::name(RED) will return the string "Red". The files will be placed in a directory named "colorapp".
 
+For larger enum specifications, it is far more readable to spread out the spec over multiple lines as follows
+
+    enumgen.define('colorapp', 'Color', [
+            ('RED'    , 'Red'),
+            ('GREEN'  , 'Green'),
+        ])
 
 Using the generator
 ===================
